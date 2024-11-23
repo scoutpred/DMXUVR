@@ -45,7 +45,9 @@ Compatible with Quest 2. At the moment, I am not sure if it works for other head
 
 -Cursor capture is left on. Will disable this one in the next patch.
 
--In some cases, the companion won't read DMX.exe. Restart the companion and DMX.exe just to be sure.
+-In some cases, the companion won't read DMX.exe. Restart both the companion and DMX.exe just to be sure.
+
+-Properly adjusting the sphere models right at your hands's locations!
 
 # Future Features? (Feel free to contribute!)
 
