@@ -9,7 +9,7 @@ Compatible with Quest 2. At the moment, I am not sure if it works for other head
 # How do I run it?
 -Start off with installing Dance Maniax Update [here!](https://github.com/AllenSeitz/dance-maniax-update) Make sure to follow the instructions.
 
--Open DMX.exe, then open DMXUVR. Focus on DMX.exe while DMXUVR is running.
+-Open DMX.exe, then open DMXUVR via Meta Quest Link (be sure to add it in the list of apps!). Focus on DMX.exe while DMXUVR is running.
 
 -There are buttons on each side:
 
