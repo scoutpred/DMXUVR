@@ -7,9 +7,11 @@ A Unity program that allows you to emulate DMX Update into the VR space. Simply 
 Compatible with Quest 2. At the moment, I am not sure if it works for other headsets.
 
 # How do I run it?
--Start off with installing Dance Maniax Update [here!](https://github.com/AllenSeitz/dance-maniax-update) Make sure to follow the instructions.
+- Start off with installing Dance Maniax Update [here!](https://github.com/AllenSeitz/dance-maniax-update) Make sure to follow the instructions.
 
-- (As of v.1.0.1) Copy the DMX_VRcomp.exe in the root directory of your Dance Maniax Update installation.
+- Extract the DMXUVR anywhere you want it to be. It doesn't have to be necessarily in the Dance Maniax Update folder. The only thing that should reside in the Dance Maniax Folder is...
+
+- (As of v.1.0.1) ...the copy the DMX_VRcomp.exe in the root directory of your Dance Maniax Update installation.
 
 - Open DMX_VRcomp.exe, then open DMXUVR via Meta Quest Link (be sure to add it in the list of apps!). Make sure to keep focus on DMX.exe while DMXUVR is running.
 
