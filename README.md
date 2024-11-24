@@ -9,53 +9,31 @@ Compatible with Quest 2. At the moment, I am not sure if it works for other head
 # How do I run it?
 -Start off with installing Dance Maniax Update [here!](https://github.com/AllenSeitz/dance-maniax-update) Make sure to follow the instructions.
 
--Open DMX.exe, then open DMXUVR via Meta Quest Link (be sure to add it in the list of apps!). Focus on DMX.exe while DMXUVR is running.
+- (As of v.1.0.1) Copy the DMX_VRcomp.exe in the root directory of your Dance Maniax Update installation.
 
--There are buttons on each side:
-
-**Top Left Side:**
-
--Insert Coin
-
-**Bottom Left Side**
-
--P1 Left
-
--P1 Enter
-
--P1 Right
-
-**Top Right Side:**
-
--Test Screen
-
-**Bottom Right Side:**
-
--P2 Left
-
--P2 Enter
-
--P2 Right
+- Open DMX_VRcomp.exe, then open DMXUVR via Meta Quest Link (be sure to add it in the list of apps!). Make sure to keep focus on DMX.exe while DMXUVR is running.
 
 # Bugs?
 
 ## A lot, for now.
 
--Apparently, playing in Center is all screwed up, probably right too. Might fix this in the future.
+-~~Apparently, playing in Center is all screwed up, probably right too. Might fix this in the future.~~ Managed to touch the source code from the dance-maniax-update repo to change the input mappings. It should be compatible for VR now. Go play Double!
 
--Cursor capture is left on. Will disable this one in the next patch.
+-~~Cursor capture is left on. Will disable this one in the next patch.~~ Removed!
 
 -In some cases, the companion won't read DMX.exe. Restart both the companion and DMX.exe just to be sure.
 
--Properly adjusting the sphere models right at your hands's locations!
+-Properly adjusting the sphere/hand models right at your hands's locations!
+
+-Latency issues? Not sure if it's me. Give it a check!
 
 # Future Features? (Feel free to contribute!)
 
--Adjustable Sensors
+-Adjustable Sensors (size, height, distance between each sensor)
 
 -Hands!
 
--Height Adjustment
+-Player Height Adjustment
 
 -Proper button models
 
@@ -79,7 +57,7 @@ Compatible with Quest 2. At the moment, I am not sure if it works for other head
 
 -Special thanks to the [Good Knight Team](https://store.steampowered.com/app/1281400/Good_Knight/) for their advice!
 
--Konami for my childhood game!
+-Konami and Bemani for my childhood game!
 
 ### In memory of my mother who supported me into playing this game back when I was a kid. She played DDR a lot.
 
