@@ -57,10 +57,10 @@ Compatible with Quest 2. At the moment, I am not sure if it works for other head
 
 -ChatGPT
 
--Special thanks to the [Good Knight Team](https://store.steampowered.com/app/1281400/Good_Knight/) for their advice!
+-Special thanks Alex from the [Good Knight Team](https://store.steampowered.com/app/1281400/Good_Knight/) for their advice!
 
 -Konami and Bemani for my childhood game!
 
-### In memory of my mother who supported me into playing this game back when I was a kid. She played DDR a lot.
+### In the loving memory of my mother who supported me into playing this game back when I was a kid. She played DDR a lot back in the day.
 
 
