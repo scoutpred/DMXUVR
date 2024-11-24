@@ -61,6 +61,8 @@ Compatible with Quest 2. At the moment, I am not sure if it works for other head
 
 -Konami and Bemani for my childhood game!
 
+Note: This repo and the program itself is for the purpose of preservation. Support your local arcades, especially if yours had a DMX cab in it! Would love to see one of those again in our area.
+
 ### In the loving memory of my mother who supported me into playing this game back when I was a kid. She played DDR a lot back in the day.
 
 
