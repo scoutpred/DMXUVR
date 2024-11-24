@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>SharpDX.DirectInput</id>
+    <version>4.2.0</version>
+    <title>SharpDX.DirectInput</title>
+    <authors>Alexandre Mutel</authors>
+    <owners>Alexandre Mutel</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://sharpdx.org/License.txt</licenseUrl>
+    <projectUrl>http://sharpdx.org/</projectUrl>
+    <iconUrl>http://sharpdx.org/logo_100x100.png</iconUrl>
+    <description>Assembly providing DirectX - DirectInput managed API.</description>
+    <copyright>Copyright (c) 2010-2016 Alexandre Mutel</copyright>
+    <tags>SharpDX DirectX Direct3D Multimedia MDX 3D DirectInput DInput</tags>
+    <repository type="git" url="https://github.com/sharpdx/SharpDX.git" commit="8e5df9f17b1d328c595a9df5851dbb2537b55621" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.0">
+        <dependency id="SharpDX" version="4.2.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="SharpDX" version="4.2.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard1.3">
+        <dependency id="SharpDX" version="4.2.0" exclude="Build,Analyzers" />
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

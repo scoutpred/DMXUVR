@@ -7,37 +7,63 @@ public class CylinderSensor : MonoBehaviour
     [DllImport("user32.dll")]
     private static extern void keybd_event(byte bVk, byte bScan, uint dwFlags, uint dwExtraInfo);
 
-    private const uint KEYEVENTF_KEYUP = 0x0002;
+    private const uint KEYEVENTF_KEYUP = 0x0002; // Key release flag
 
-    [Tooltip("Assign the key to simulate when the sphere enters.")]
+    [Tooltip("Assign the key to simulate when the sphere is inside the sensor zone.")]
     public KeyCode assignedKey = KeyCode.Q;
+
+    private bool isSphereInZone = false; // Tracks if the sphere is inside the trigger zone
+    private byte virtualKey; // Virtual key code of the assigned key
+
+    private void Start()
+    {
+        // Get the virtual key code for the assigned key
+        virtualKey = GetVirtualKeyCode(assignedKey);
+
+        if (virtualKey == 0)
+        {
+            Debug.LogWarning($"Assigned key '{assignedKey}' does not have a valid virtual key mapping!");
+        }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
-        // Check if the sphere enters the trigger zone
-        if (other.CompareTag("Sphere"))
+        if (other.CompareTag("Sphere") && !isSphereInZone)
         {
-            Debug.Log($"Sphere entered the cylinder's sensor zone! Simulating '{assignedKey}' key press.");
+            isSphereInZone = true;
+            Debug.Log($"Sphere entered the sensor zone. Holding key '{assignedKey}'.");
+            SimulateKeyDown();
+        }
+    }
 
-            // Convert Unity KeyCode to a Windows virtual key code
-            byte virtualKey = GetVirtualKeyCode(assignedKey);
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Sphere") && isSphereInZone)
+        {
+            isSphereInZone = false;
+            Debug.Log($"Sphere exited the sensor zone. Releasing key '{assignedKey}'.");
+            SimulateKeyUp();
+        }
+    }
 
-            // Simulate key press for the assigned key
-            if (virtualKey != 0)
-            {
-                keybd_event(virtualKey, 0, 0, 0); // Key down
-                keybd_event(virtualKey, 0, KEYEVENTF_KEYUP, 0); // Key up
-            }
-            else
-            {
-                Debug.LogWarning($"Key '{assignedKey}' does not have a mapped virtual key code.");
-            }
+    private void SimulateKeyDown()
+    {
+        if (virtualKey != 0)
+        {
+            keybd_event(virtualKey, 0, 0, 0); // Simulate key down
+        }
+    }
+
+    private void SimulateKeyUp()
+    {
+        if (virtualKey != 0)
+        {
+            keybd_event(virtualKey, 0, KEYEVENTF_KEYUP, 0); // Simulate key up
         }
     }
 
     private byte GetVirtualKeyCode(KeyCode key)
     {
-        // Map Unity KeyCode to Windows Virtual Key Codes
         switch (key)
         {
             case KeyCode.A: return 0x41;
@@ -92,6 +118,12 @@ public class CylinderSensor : MonoBehaviour
             case KeyCode.Escape: return 0x1B;
             case KeyCode.Return: return 0x0D;
             case KeyCode.Tab: return 0x09;
+            case KeyCode.UpArrow: return 0x0026;
+            case KeyCode.DownArrow: return 0x0028;
+            case KeyCode.LeftArrow: return 0x0025;
+            case KeyCode.RightArrow: return 0x0027;
+            case KeyCode.Semicolon: return 0xBA;
+            case KeyCode.Quote: return 0xDE;
             default: return 0; // No valid mapping
         }
     }
