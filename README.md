@@ -17,7 +17,7 @@ Compatible with Quest 2. At the moment, I am not sure if it works for other head
 
 ## A lot, for now.
 
--~~Apparently, playing in Center is all screwed up, probably right too. Might fix this in the future.~~ Managed to touch the source code from the dance-maniax-update repo to change the input mappings. It should be compatible for VR now. Go play Double!
+-~~Apparently, playing in Center is all screwed up, probably right too. Might fix this in the future.~~ Managed to touch the source code from the dance-maniax-update repo to change the input mappings. A separate executable called DMX_VRComp.exe is added in the RAR file. Follow installation instructions. It should be compatible for VR now. Go play Double!
 
 -~~Cursor capture is left on. Will disable this one in the next patch.~~ Removed!
 
